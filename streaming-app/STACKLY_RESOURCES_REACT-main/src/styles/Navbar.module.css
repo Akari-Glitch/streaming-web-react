@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 8rem;
+  margin: 0;
+  padding: 0;
+  background: #182337;
+  position: fixed;
+  top: 0;
+}
+.logo {
+  color: #ffffff;
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+.navbar > a {
+  margin: 2rem 0;
+  padding: 0 0.3rem;
+  text-decoration: none;
+}
+.fa_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.9rem;
+}
+.fa_home:hover {
+  color: aqua;
+}
+.fa_graduation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.9rem;
+}
+.fa_graduation:hover {
+  color: aqua;
+}
+.fa_envelop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.9rem;
+}
+.fa_envelop:hover {
+  color: aqua;
+}
+.fa_info_circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-size: 1.9rem;
+}
+.fa_info_circle:hover {
+  color: aqua;
+}
+.home__text,
+.courses__text,
+.messages__text,
+.info__text {
+  font-size: 1rem;
+  padding: 0.2rem;
+  color: #ffffff80;
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 100vw;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    z-index: 10;
+  }
+  .logo {
+    display: none;
+  }
+  .navbar > a {
+    margin: 0;
+    padding: 0;
+  }
+  .home__text,
+  .courses__text,
+  .messages__text,
+  .info__text {
+    display: none;
+  }
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .navbar {
+    position: fixed;
+  }
+}

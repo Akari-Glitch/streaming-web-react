@@ -1,0 +1,37 @@
+.player_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background: #182337;
+}
+
+.player_container > h1 {
+  color: #ffffff;
+  font-size: 3rem;
+}
+.player {
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  height: fit-content;
+  width: fit-content;
+}
+.discord_btn {
+  outline: none;
+  border: none;
+  background: #728ad6;
+  height: 4rem;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 0 3rem;
+  margin: 1rem 0 0 0;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.discord {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}

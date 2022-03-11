@@ -1,0 +1,35 @@
+{
+  "name": "stackly-api",
+  "version": "0.0.1",
+  "description": "Proyecto para hacer streaming en Stackly Code",
+  "main": "app.js",
+  "scripts": {
+    "start": "node dist/app.js",
+    "build": "babel src --out-dir dist",
+    "dev": "nodemon --exec npx babel-node -- src/app.js"
+  },
+  "keywords": [],
+  "author": "Stackly COde",
+  "license": "ISC",
+  "dependencies": {
+    "basic-auth-connect": "^1.0.0",
+    "chalk": "^2.4.2",
+    "cors": "^2.8.5",
+    "dateformat": "^3.0.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "lodash": ">=4.17.13",
+    "mkdirp": "1.0.3",
+    "node-media-server": "^2.2.4",
+    "nodemon": "^2.0.4",
+    "socket.io": "^4.0.1",
+    "ws": "^5.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.10",
+    "@babel/core": "^7.13.10",
+    "@babel/node": "^7.13.12",
+    "@babel/preset-env": "^7.13.12",
+    "nodemon": "^2.0.7"
+  }
+}

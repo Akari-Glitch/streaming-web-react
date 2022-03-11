@@ -1,0 +1,650 @@
+.app__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container {
+  min-height: 100vh;
+  margin-left: 8rem;
+  width: calc(100% - 8rem);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "0 c"
+    "a b";
+}
+
+.dashboard__container__left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+  height: max-content;
+  width: 100%;
+  grid-area: a;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10rem;
+  min-width: 70%;
+  width: 70%;
+  background: #f5f5f7;
+  border-radius: 15px;
+}
+.welcome__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin: 0 0 0 1rem;
+}
+.welcome__text h2 {
+  font-family: "BalooBhai";
+  font-size: 2rem;
+  margin: 0;
+}
+.welcome__text p {
+  font-size: 1rem;
+  color: gray;
+  margin: 0;
+}
+.character__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: fit-content;
+}
+.character {
+  width: 100%;
+  margin: -2rem 0 0 0;
+}
+
+/* Course STATUS */
+.course__overview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  min-width: 70%;
+  width: 70%;
+  margin: 1rem 0 0 0;
+  font-family: "BalooBhai";
+}
+.course__status {
+  display: flex;
+  flex-direction: row;
+  height: fit-content;
+  height: 5.6rem;
+  min-width: 85%;
+  width: 100%;
+  background: #f5f5f7;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+.course__status__arrows {
+  display: inline-flex;
+}
+.course_background {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  background: #2e384c;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 15px;
+  margin: 0 0 0 1rem;
+}
+.course__status__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: calc(100% - 6rem);
+  margin: 0 0 0 1rem;
+}
+.course__status h2 {
+  font-size: 0.9rem;
+  width: 100%;
+  margin: 0;
+}
+
+.course__status p {
+  font-size: 0.8rem;
+  width: 100%;
+  margin: 0;
+  color: gray;
+}
+.course__and__text {
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+  height: 100%;
+  width: 100%;
+}
+.continue__btn {
+  margin: 0 1.5rem 0 0;
+  text-transform: none;
+}
+.left__arrow {
+  margin: 0 0.5rem;
+}
+.right__arrow {
+  margin: 0 0.5rem;
+}
+/* Course STATUS */
+
+/* My Courses */
+.my__courses {
+  display: flex;
+  flex-direction: column;
+  min-width: 70%;
+  width: 70%;
+  margin: 0.5rem 0 1rem 0;
+  font-family: "BalooBhai";
+  align-items: center;
+}
+.my__courses h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+.my__course__text {
+  display: flex;
+  width: calc(100% - 6rem);
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 0 1rem;
+}
+
+.my__courses__filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 1.5rem;
+}
+.my__courses__filter p {
+  padding: 0;
+}
+
+.my__courses__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  row-gap: 1rem;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+.my__courses__course {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.6rem;
+  width: 100%;
+  border-radius: 15px;
+  background: #f5f5f7;
+}
+.my__course__and__text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.my__course__and__text h2 {
+  font-size: 1.25rem;
+}
+
+.my__course__and__text p {
+  color: gray;
+  font-size: 0.95rem;
+}
+.my__course__thumbnail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  background: #2e384c;
+  height: auto;
+  width: 6rem;
+  border-radius: 2px;
+  margin: 0 0 0 1rem;
+}
+.my_course__duration {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 0.1rem;
+}
+.my_course__duration p {
+  margin: 0 0 0 0.1rem;
+}
+.fa_clock {
+  font-size: 1.2rem;
+}
+.view__btn {
+  margin: 0 1.5rem 0 0;
+}
+/* My Courses */
+
+/* Course Progress */
+.dashboard__container__right {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  height: max-content;
+  align-items: center;
+
+  grid-area: b;
+}
+.user__bar__section {
+  grid-area: c;
+  margin: 0.5rem 0 0.5rem 0;
+  align-self: center;
+  justify-self: center;
+  width: 100%;
+}
+.courses__progress__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  min-width: 70%;
+  width: 70%;
+}
+.courses__progress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 6rem;
+  width: 100%;
+}
+.courses__completed {
+  display: flex;
+  flex-direction: row;
+  background: #f5f5f7;
+  height: 6rem;
+  width: 48%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.courses__in__progress {
+  display: flex;
+  flex-direction: row;
+  background: #f5f5f7;
+  height: 6rem;
+  width: 48%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.courses__in__progress h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+.courses__in__progress p {
+  font-size: 1rem;
+  margin: 0 0 0 0.5rem;
+}
+.courses__completed h2 {
+  font-size: 4rem;
+  margin: 0;
+}
+.courses__completed p {
+  font-size: 1rem;
+  margin: 0 0 0 0.5rem;
+}
+.jump__line {
+  display: block;
+}
+
+.chart__section {
+  height: auto;
+  width: 70%;
+  margin: 0 0 3rem 0;
+  font-family: "BalooBhai";
+}
+.chart__section h2 {
+  margin: 0;
+  text-align: center;
+  font-size: 2rem;
+}
+.chart__filter {
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+}
+.chart__filter p {
+  font-weight: 600;
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+/* Search bar */
+
+.search__bar {
+  display: flex;
+  background: #f5f5f7;
+  border-radius: 15px;
+  height: 3rem;
+  width: 18rem;
+  padding: 0 1rem 0 0;
+}
+.search__icon {
+  margin: 0 0.5rem;
+  align-self: center;
+}
+.search__input {
+  margin: 0 0 0 0.2rem;
+  height: 100%;
+  width: 100%;
+}
+.user__bar {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+}
+.user__bar__items {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 50%;
+}
+.profile__img {
+  height: 3rem;
+  width: 3rem;
+}
+.notification__bell {
+  margin: 0 1rem 0 1rem;
+}
+
+/* Search bar */
+
+/* Learn More Section*/
+.learn__more {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #f5f5f7;
+  height: 10rem;
+  min-width: 70%;
+  width: 70%;
+  border-radius: 15px;
+}
+.learn__more h2 {
+  margin: 0;
+  font-family: "BalooBhai";
+  font-size: 1.5rem;
+}
+.learn__more__text {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: 0 0 0 1rem;
+}
+.learn__more__btn {
+  margin: 1rem 0 0 0;
+  width: fit-content;
+}
+
+/* */
+.fa__play__circle {
+  font-size: 1.8rem;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  /*   .welcome,
+  .course__overview,
+  .my__courses {
+    min-width: 70%;
+    width: 70%;
+  }
+  .courses__completed,
+  .courses__in__progress {
+    min-width: 9.5rem;
+  } */
+}
+@media only screen and (min-width: 769px) and (max-width: 1199px) {
+  .app__container {
+    grid-template-columns: 1fr;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "c c"
+      "a a"
+      "b b";
+    width: calc(100% - 8rem);
+  }
+  .welcome {
+    min-width: 60%;
+    width: 60%;
+    margin: 1.5rem 0 0 0;
+  }
+  .course__overview {
+    min-width: 60%;
+    width: 60%;
+  }
+  .course__and__text {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  .course__status {
+    align-self: center;
+    flex-direction: column;
+    height: fit-content;
+    min-width: 100%;
+    width: 100%;
+  }
+  .course__status__text {
+    height: calc(100% - 3.5rem);
+    width: 100%;
+  }
+
+  .my__course__thumbnail,
+  .course_background {
+    margin: 0.5rem 0;
+    width: 90%;
+  }
+  .my__courses {
+    min-width: 60%;
+    width: 60%;
+  }
+  .my__courses__course {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .my__course__and__text {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .my__courses h2,
+  .my__courses p {
+    margin: 0;
+  }
+  .continue__btn,
+  .view__btn {
+    margin: 0.5rem 0;
+  }
+  .courses__progress__section {
+    min-width: 60%;
+    width: 60%;
+  }
+  .chart__section {
+    min-width: 70%;
+    width: 70%;
+  }
+  .learn__more {
+    min-width: 60%;
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .app__container {
+    grid-template-columns: 1fr;
+    margin-bottom: 6rem;
+  }
+  .container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "c c"
+      "a a"
+      "b b";
+    width: 100%;
+    margin: 0;
+  }
+  .welcome {
+    min-width: 80%;
+    width: 90%;
+    margin: 1.5rem 0 0 0;
+  }
+  .user__bar__section {
+    width: 80%;
+  }
+  .user__bar {
+    width: 100%;
+  }
+  .search__bar {
+    width: 60%;
+  }
+  .my__courses {
+    width: 100%;
+  }
+
+  .my__courses h2,
+  .my__courses p {
+    margin: 0;
+  }
+  .my__courses__list {
+    width: 90%;
+    margin: 1rem;
+  }
+
+  .my__course__text {
+    margin: 0;
+  }
+  .course__status {
+    align-self: center;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .course__status__text {
+    height: calc(100% - 3.5rem);
+    width: 100%;
+  }
+  .course__status__text h2,
+  .course__status__text p {
+    margin: 0;
+  }
+  .course__and__text {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .course__overview {
+    height: fit-content;
+    width: 90%;
+    height: fit-content;
+  }
+  .dashboard__container__right {
+    padding-bottom: 5rem;
+  }
+  .continue__btn {
+    margin: 0;
+  }
+  .left__arrow,
+  .right__arrow {
+    display: none;
+  }
+  .courses__progress__section {
+    width: 100%;
+  }
+  .courses__progress {
+    height: 6rem;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .courses__completed {
+    width: 45%;
+    height: 100%;
+  }
+  .courses__in__progress {
+    width: 45%;
+    height: 100%;
+  }
+  .learn__more {
+    width: 80%;
+  }
+
+  .my__course__thumbnail,
+  .course_background {
+    margin: 0.5rem 0;
+    width: 90%;
+  }
+
+  .my__courses__course {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  .my__course__and__text {
+    flex-direction: column;
+    text-align: center;
+  }
+  .my__course__and__text {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .continue__btn,
+  .view__btn {
+    margin: 0.5rem 0;
+  }
+  .user__bar__items {
+    min-width: 80%;
+  }
+  .character__container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: fit-content;
+  }
+  .character {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .chart__section {
+    min-width: 90%;
+    width: 90%;
+  }
+  .learn__more {
+    min-width: 90%;
+    width: 90%;
+  }
+}

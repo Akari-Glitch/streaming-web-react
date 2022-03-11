@@ -1,0 +1,34 @@
+.app__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin-left: 8rem;
+  width: calc(100% - 8rem);
+  background: linear-gradient(
+    to right,
+    rgba(103, 219, 249, 0.9) 30.72%,
+    rgba(49, 56, 209, 0.9) 100.8%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 12rem;
+}
+.profile__avatar {
+  margin: 5rem 0 0 0;
+}
+
+.profile__form {
+  margin: 2rem 0 0 0;
+}
+.save__btn__container {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+}
+.links {
+  text-decoration: none;
+}
